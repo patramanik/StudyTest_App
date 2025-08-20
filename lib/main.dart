@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 import 'routes/app_routes.dart';
 
 void main() {
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Login Demo',
       debugShowCheckedModeBanner: false,
-      initialRoute: '/home',
+      initialRoute: '/',
       getPages: AppRoutes.routes,
     );
   }

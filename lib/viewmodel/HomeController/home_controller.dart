@@ -1,15 +1,9 @@
-
 // ignore_for_file: unnecessary_overrides
 
 import 'package:get/get.dart';
 
-class HomeController extends  GetxController{
+class HomeController extends GetxController {
   // Add your home controller logic here
-  final RxString title = 'Home'.obs;
-
-  void updateTitle(String newTitle) {
-    title.value = newTitle;
-  }
 
   @override
   void onInit() {

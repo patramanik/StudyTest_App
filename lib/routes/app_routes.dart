@@ -6,9 +6,13 @@ import 'package:study_test_app/view/screens/mobile/Home/HomeScreen.dart';
 import '../view/screens/mobile/Auth/login_screen.dart';
 import '../view/screens/mobile/Auth/otp_verification_screen.dart';
 import '../view/screens/mobile/Auth/register_screen.dart';
+import '../view/screens/mobile/SplashScreen/SplashScreen.dart';
 
 class AppRoutes {
   static final routes = [
+    // Splash Screen
+    GetPage(name: '/', page: () => const SplashScreen()),
+
     // all Auth routes
     GetPage(name: '/login', page: () => LoginScreen()),
     GetPage(name: '/register', page: () => SignUpScreen()),
