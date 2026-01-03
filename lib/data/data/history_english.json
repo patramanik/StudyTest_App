@@ -1,0 +1,918 @@
+{
+  "subject": "History",
+  "questions": [
+    {
+      "id": 1,
+      "question": "The periodical 'Bangadarshan' was a—",
+      "options": {
+        "A": "Weekly magazine",
+        "B": "Fortnightly magazine",
+        "C": "Monthly magazine",
+        "D": "Annual magazine"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 2,
+      "question": "Indians learned the use of potatoes from the—",
+      "options": {
+        "A": "Portuguese",
+        "B": "English",
+        "C": "Mughals",
+        "D": "Dutch"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 3,
+      "question": "Dadasaheb Phalke was associated with—",
+      "options": {
+        "A": "Cinema",
+        "B": "The world of sports",
+        "C": "Local history studies",
+        "D": "Environmental history studies"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 4,
+      "question": "'Somprokash' was a—",
+      "options": {
+        "A": "Daily newspaper",
+        "B": "Weekly newspaper",
+        "C": "Fortnightly newspaper",
+        "D": "Monthly newspaper"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 5,
+      "question": "Football was introduced in India by the—",
+      "options": {
+        "A": "English",
+        "B": "Dutch",
+        "C": "French",
+        "D": "Portuguese"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 6,
+      "question": "The book 'Jibaner Jharapata' is an—",
+      "options": {
+        "A": "Novel",
+        "B": "Book of poetry",
+        "C": "Biography",
+        "D": "Autobiography"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 7,
+      "question": "The father/proponent of Subaltern Studies in India is—",
+      "options": {
+        "A": "Ranajit Guha",
+        "B": "Amalesh Tripathi",
+        "C": "Ramachandra Guha",
+        "D": "Sumit Sarkar"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 8,
+      "question": "'Jibaner Jharapata' was written by—",
+      "options": {
+        "A": "Sarala Devi Chaudhurani",
+        "B": "Rabindranath Tagore",
+        "C": "Swami Vivekananda",
+        "D": "Leela Nag"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 9,
+      "question": "The autobiography titled 'Jibansmriti' is by—",
+      "options": {
+        "A": "Manikuntala Sen",
+        "B": "Narayan Sanyal",
+        "C": "Rabindranath Tagore",
+        "D": "Bipin Chandra Pal"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 10,
+      "question": "'Jibaner Jharapata' was first published in which magazine?",
+      "options": {
+        "A": "Bangadarshan",
+        "B": "Desh",
+        "C": "Somprokash",
+        "D": "Sambad Prabhakar"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 11,
+      "question": "'International Women's Day' is observed on—",
+      "options": {
+        "A": "5 January",
+        "B": "8 March",
+        "C": "8 April",
+        "D": "9 May"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 12,
+      "question": "Who is called the Father of Indian Cinema?",
+      "options": {
+        "A": "Satyajit Ray",
+        "B": "Hiralal Sen",
+        "C": "Hiralal Sarkhel",
+        "D": "Dadasaheb Phalke"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 13,
+      "question": "Satyajit Ray was associated with—",
+      "options": {
+        "A": "History of sports",
+        "B": "Urban history",
+        "C": "Women's history",
+        "D": "History of art studies"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 14,
+      "question": "Silk was discovered in ancient—",
+      "options": {
+        "A": "India",
+        "B": "Rome",
+        "C": "Persia",
+        "D": "China"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 15,
+      "question": "The 'Forbidden City' refers to—",
+      "options": {
+        "A": "Lhasa",
+        "B": "Beijing",
+        "C": "Rome",
+        "D": "Constantinople"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 16,
+      "question": "Rachel Carson was associated with—",
+      "options": {
+        "A": "Regional history",
+        "B": "Women's history",
+        "C": "Environmental history",
+        "D": "Urban history"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 17,
+      "question": "Bankim Chandra edited 'Bangadarshan' magazine for—",
+      "options": {
+        "A": "Three years",
+        "B": "Four years",
+        "C": "Ten years",
+        "D": "Twelve years"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 18,
+      "question": "The book 'Nadia Kahini' was written by—",
+      "options": {
+        "A": "Nikhilnath Roy",
+        "B": "Kumudranjan Mallick",
+        "C": "Satish Chandra Mitra",
+        "D": "Kumudnath Mallick"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 19,
+      "question": "Upendranath Brahmachari was associated with—",
+      "options": {
+        "A": "Urban history",
+        "B": "Local history",
+        "C": "History of art studies",
+        "D": "History of science, technology and medicine"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 20,
+      "question": "The first silent film made in India was—",
+      "options": {
+        "A": "Chandidas",
+        "B": "Raja Harishchandra",
+        "C": "Denapaona",
+        "D": "Jamai Sasthi"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 21,
+      "question": "The first political magazine published in Bengali was—",
+      "options": {
+        "A": "Bangadarshan",
+        "B": "Digdarshan",
+        "C": "Somprokash",
+        "D": "Bharati"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 22,
+      "question": "Medha Patkar was associated with—",
+      "options": {
+        "A": "Narmada Bachao Andolan",
+        "B": "Chipko Movement",
+        "C": "Quit India Movement",
+        "D": "Swadeshi Movement"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 23,
+      "question": "Which city is called the 'City of Culture'?",
+      "options": {
+        "A": "Kolkata",
+        "B": "Bombay",
+        "C": "Chennai",
+        "D": "Jaipur"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 24,
+      "question": "The history of Calcutta Science College belongs to—",
+      "options": {
+        "A": "History of photography",
+        "B": "History of sports",
+        "C": "History of science and technology",
+        "D": "Environmental history"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 25,
+      "question": "The primary historical source for understanding the colonial administration's attitude—",
+      "options": {
+        "A": "Periodicals",
+        "B": "Government documents",
+        "C": "Newspapers",
+        "D": "Memoirs"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 26,
+      "question": "Colonial Forest Laws in India are primarily a subject of—",
+      "options": {
+        "A": "Urban history studies",
+        "B": "Women's history studies",
+        "C": "Environmental history studies",
+        "D": "Food history studies"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 27,
+      "question": "The history of the Namasudra movement in Bengal is a subject of—",
+      "options": {
+        "A": "Environmental history studies",
+        "B": "Urban history studies",
+        "C": "Social history studies",
+        "D": "Military history studies"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 28,
+      "question": "In the government archives (Mahafizkhana), one can find—",
+      "options": {
+        "A": "Reports of government officials",
+        "B": "Rabindranath Tagore's Jibansmriti",
+        "C": "Sarala Devi Chaudhurani's Jibaner Jharapata",
+        "D": "Collection of letters from Jawaharlal Nehru to Indira"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 29,
+      "question": "Who is the playwright of 'Nabanna'?",
+      "options": {
+        "A": "Bijon Bhattacharya",
+        "B": "Utpal Dutt",
+        "C": "Jyotirindranath Tagore",
+        "D": "Brajendranath Bandyopadhyay"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 30,
+      "question": "Who described History as the 'Mother of all disciplines'?",
+      "options": {
+        "A": "Jürgen Kocka",
+        "B": "Marc Bloch",
+        "C": "G. M. Trevelyan",
+        "D": "Lucien Febvre"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 31,
+      "question": "The first published journal/periodical in the Bengali language was—",
+      "options": {
+        "A": "Somprokash",
+        "B": "Digdarshan",
+        "C": "Samachar Darpan",
+        "D": "Bengal Gazette"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 32,
+      "question": "The Hindi translation of Jawaharlal Nehru's letters to Indira Gandhi was done by—",
+      "options": {
+        "A": "Munshi Premchand",
+        "B": "Krishan Chander",
+        "C": "Khushwant Singh",
+        "D": "Saadat Hasan Manto"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 33,
+      "question": "The first weekly magazine published in the Bengali language was—",
+      "options": {
+        "A": "Bengal Gazette",
+        "B": "Samachar Darpan",
+        "C": "Digdarshan",
+        "D": "Somprokash"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 34,
+      "question": "'Kuchipudi' is the dance style of which state?",
+      "options": {
+        "A": "Tamil Nadu",
+        "B": "Kerala",
+        "C": "Andhra Pradesh",
+        "D": "Assam"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 35,
+      "question": "Kalhana's 'Rajatarangini' is an example of—",
+      "options": {
+        "A": "Environmental history",
+        "B": "Local history",
+        "C": "Urban history",
+        "D": "Military history"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 36,
+      "question": "The first weekly newspaper of India was—",
+      "options": {
+        "A": "Samachar Darpan",
+        "B": "Bengal Gazette",
+        "C": "Sambad Prabhakar",
+        "D": "Digdarshan"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 37,
+      "question": "In which magazine was the book 'Sottor Botshor' published?",
+      "options": {
+        "A": "Probashi",
+        "B": "Bangadarshan",
+        "C": "Somprokash",
+        "D": "Desh"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 38,
+      "question": "The emergence of the Annales school of history happened in—",
+      "options": {
+        "A": "England",
+        "B": "Russia",
+        "C": "France",
+        "D": "Germany"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 39,
+      "question": "The captain of the 1911 IFA Shield-winning Mohun Bagan team was—",
+      "options": {
+        "A": "Gostha Pal",
+        "B": "Shibdas Bhaduri",
+        "C": "Chuni Goswami",
+        "D": "Sailen Manna"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 40,
+      "question": "Who is called the 'Father of Bengali Cinema'?",
+      "options": {
+        "A": "Satyajit Ray",
+        "B": "Hiralal Sen",
+        "C": "Dadasaheb Phalke",
+        "D": "Mrinal Sen"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 41,
+      "question": "The editor of 'Probashi' magazine was—",
+      "options": {
+        "A": "Ramananda Chatterjee",
+        "B": "Ramanuj Chatterjee",
+        "C": "Ramkumar Chatterjee",
+        "D": "Dayanand Bandyopadhyay"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 42,
+      "question": "The Chipko movement in India was a—",
+      "options": {
+        "A": "Labor movement",
+        "B": "Environmental movement",
+        "C": "Peasant movement",
+        "D": "Language movement"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 43,
+      "question": "'International Women's Year' was observed in—",
+      "options": {
+        "A": "1973 AD",
+        "B": "1974 AD",
+        "C": "1975 AD",
+        "D": "1976 AD"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 44,
+      "question": "The subject matter of New Social History is—",
+      "options": {
+        "A": "The gentlemen (Bhadralok)",
+        "B": "Intellectuals",
+        "C": "Common people",
+        "D": "Salaried employees"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 45,
+      "question": "The publisher of 'Somprokash' magazine was—",
+      "options": {
+        "A": "Bankim Chandra Chattopadhyay",
+        "B": "Dwarkanath Vidyabhusan",
+        "C": "Dinabandhu Mitra",
+        "D": "Surendranath Bandyopadhyay"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 46,
+      "question": "What is the name of the world's oldest game?",
+      "options": {
+        "A": "Kabaddi",
+        "B": "Judo",
+        "C": "Mancala",
+        "D": "Hockey"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 47,
+      "question": "The creator of the film 'Raja Harishchandra' was—",
+      "options": {
+        "A": "Dadasaheb Phalke",
+        "B": "Mohanlal Bajaj",
+        "C": "Satyajit Ray",
+        "D": "Guru Dutt"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 48,
+      "question": "Which country is called the 'Land of Cakes'?",
+      "options": {
+        "A": "France",
+        "B": "India",
+        "C": "Germany",
+        "D": "Scotland"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 49,
+      "question": "Who is called the Father of Qawwali?",
+      "options": {
+        "A": "Abul Fazl",
+        "B": "Amir Khusrau",
+        "C": "Bada'uni",
+        "D": "Megasthenes"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 50,
+      "question": "Who published the book 'India Today'?",
+      "options": {
+        "A": "Hobsbawm",
+        "B": "Rajni Palme Dutt",
+        "C": "Ranajit Guha",
+        "D": "Sumit Sarkar"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 51,
+      "question": "Who said 'History is a science, no less and no more'?",
+      "options": {
+        "A": "Ranke",
+        "B": "Bury",
+        "C": "Trevelyan",
+        "D": "Ram Sharan Sharma"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 52,
+      "question": "The source of Indian music is—",
+      "options": {
+        "A": "Rigveda",
+        "B": "Samaveda",
+        "C": "Yajurveda",
+        "D": "Atharvaveda"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 53,
+      "question": "The first Bengali to touch a football was—",
+      "options": {
+        "A": "Saradaranjan Ray",
+        "B": "Nagendra Prasad Sarbadhikari",
+        "C": "Shibdas Bhaduri",
+        "D": "Baichung Bhutia"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 54,
+      "question": "Who started the first films in the world?",
+      "options": {
+        "A": "Syed Brothers",
+        "B": "August Brothers",
+        "C": "Lumière Brothers",
+        "D": "Wright Brothers"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 55,
+      "question": "Who authored the book 'Green Imperialism'?",
+      "options": {
+        "A": "Rachel Carson",
+        "B": "Alfred Crosby",
+        "C": "Irfan Habib",
+        "D": "Richard Grove"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 56,
+      "question": "Who wrote 'Ekattorer Diary'?",
+      "options": {
+        "A": "Manikuntala Sen",
+        "B": "Ashalata Sarkar",
+        "C": "Amiya Thakur",
+        "D": "Sufia Kamal"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 57,
+      "question": "For which film did Satyajit Ray win an international award in 1955?",
+      "options": {
+        "A": "Pather Panchali",
+        "B": "Feluda",
+        "C": "Hirak Rajar Deshe",
+        "D": "Aranyer Dinratri"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 58,
+      "question": "'Somprokash' newspaper was published every—",
+      "options": {
+        "A": "Saturday",
+        "B": "Sunday",
+        "C": "Monday",
+        "D": "Thursday"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 59,
+      "question": "The first footballer of India was—",
+      "options": {
+        "A": "Gostha Pal",
+        "B": "Shibdas Bhaduri",
+        "C": "Nagendra Prasad Sarbadhikari",
+        "D": "Saradaranjan Ray"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 60,
+      "question": "Military history studies first began in—",
+      "options": {
+        "A": "Germany",
+        "B": "The Roman Empire",
+        "C": "England",
+        "D": "France"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 61,
+      "question": "The Chipko movement led by Sunderlal Bahuguna took place in—",
+      "options": {
+        "A": "Uttarakhand",
+        "B": "Uttar Pradesh",
+        "C": "Punjab",
+        "D": "Himachal Pradesh"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 62,
+      "question": "Who is called the Father of Indian Railways?",
+      "options": {
+        "A": "Lord Canning",
+        "B": "Lord Bentinck",
+        "C": "Lord Dalhousie",
+        "D": "Lord Mayo"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 63,
+      "question": "Who said 'History is an unending dialogue between the past and the present'?",
+      "options": {
+        "A": "Edmund Burke",
+        "B": "Lord Acton",
+        "C": "E. H. Carr",
+        "D": "Amalesh Tripathi"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 64,
+      "question": "The first Bengali daily newspaper was—",
+      "options": {
+        "A": "Sambad Bhaskar",
+        "B": "Sambad Kaumudi",
+        "C": "Sambad Prabhakar",
+        "D": "Samachar Darpan"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 65,
+      "question": "'Bangadarshan' was first published in—",
+      "options": {
+        "A": "1780 AD",
+        "B": "1815 AD",
+        "C": "1863 AD",
+        "D": "1872 AD"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 66,
+      "question": "In government archives, what are preserved?",
+      "options": {
+        "A": "Reports of government officials and departments",
+        "B": "Reports of the Intelligence Department",
+        "C": "Police department documents",
+        "D": "All of the above"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 67,
+      "question": "Mughal Emperor Farrukhsiyar's Farman was issued in the year",
+      "options": {
+        "A": "1715 AD",
+        "B": "1717 AD",
+        "C": "1739 AD",
+        "D": "1817 AD"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 68,
+      "question": "Pitt's India Act was introduced in the year",
+      "options": {
+        "A": "1773 AD",
+        "B": "1774 AD",
+        "C": "1784 AD",
+        "D": "1792 AD"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 69,
+      "question": "Atmiya Sabha was founded in the year",
+      "options": {
+        "A": "1814 AD",
+        "B": "1815 AD",
+        "C": "1817 AD",
+        "D": "1828 AD"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 70,
+      "question": "The Jiradari System was introduced in Bengal Presidency by",
+      "options": {
+        "A": "Robert Clive",
+        "B": "Warren Hastings",
+        "C": "Lord Cornwallis",
+        "D": "William Bentinck"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 71,
+      "question": "The Dual System of Administration was abolished in the year",
+      "options": {
+        "A": "1770 AD",
+        "B": "1772 AD",
+        "C": "1773 AD",
+        "D": "1774 AD"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 72,
+      "question": "Satyashodhak Samaj was founded by",
+      "options": {
+        "A": "Veeresalingam Pantulu",
+        "B": "Jyotirao Phule",
+        "C": "Dayananda Saraswati",
+        "D": "Keshab Chandra Sen"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 73,
+      "question": "Fort William College was established in the year",
+      "options": {
+        "A": "1700 AD",
+        "B": "1800 AD",
+        "C": "1817 AD",
+        "D": "1818 AD"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 74,
+      "question": "Charles Wood's Despatch was issued in the year",
+      "options": {
+        "A": "1754 AD",
+        "B": "1854 AD",
+        "C": "1858 AD",
+        "D": "1861 AD"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 75,
+      "question": "The Dramatic Performance Control Act was introduced by",
+      "options": {
+        "A": "Lord Northbrook",
+        "B": "Lord Lytton",
+        "C": "Lord Ripon",
+        "D": "Lord Curzon"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 76,
+      "question": "The first session of the Indian National Congress was presided over by",
+      "options": {
+        "A": "Surendra Nath Banerjee",
+        "B": "Gopal Krishna Gokhale",
+        "C": "Womesh Chandra Banerjee",
+        "D": "Dadabhai Naoroji"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 77,
+      "question": "The Surat Session of the Indian National Congress was held in the year",
+      "options": {
+        "A": "1905 AD",
+        "B": "1906 AD",
+        "C": "1907 AD",
+        "D": "1916 AD"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 78,
+      "question": "Anushilan Samiti in Calcutta was founded by",
+      "options": {
+        "A": "Satish Chandra Bose",
+        "B": "Jatindra Nath Mukherjee",
+        "C": "Bipin Chandra Pal",
+        "D": "Aurobindo Ghosh"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 79,
+      "question": "The Jallianwala Bagh Massacre took place in 1919 on",
+      "options": {
+        "A": "13th March",
+        "B": "12th April",
+        "C": "13th April",
+        "D": "22nd April"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 80,
+      "question": "The Tamralipta Jatiya Sarkar was formed by",
+      "options": {
+        "A": "Subhas Chandra Bose",
+        "B": "Satish Chandra Samanta",
+        "C": "Surya Sen",
+        "D": "Chittaranjan Das"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 81,
+      "question": "The Lahore Session of the Muslim League was presided over by",
+      "options": {
+        "A": "Fazlul Haque",
+        "B": "Muhammad Iqbal",
+        "C": "Badruddin Tyabji",
+        "D": "Muhammad Ali Jinnah"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 82,
+      "question": "The Constitution of Independent India came into force on",
+      "options": {
+        "A": "26th January, 1949",
+        "B": "26th November, 1949",
+        "C": "26th January, 1950",
+        "D": "26th January, 1951"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 83,
+      "question": "The first President of Independent India was",
+      "options": {
+        "A": "Dr. Rajendra Prasad",
+        "B": "Dr. B. R. Ambedkar",
+        "C": "C. Rajagopalachari",
+        "D": "Dr. Sarvepalli Radhakrishnan"
+      },
+      "correctAnswer": "A"
+    }
+  ]
+}

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -38,14 +37,12 @@ class CustomDrawer extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 24,
-                      backgroundImage: AssetImage(
-                        'assets/images/logo.png',
-                      ),
+                      backgroundImage: AssetImage('assets/images/logo.png'),
                     ),
                     const SizedBox(width: 12),
                     Expanded(
                       child: Text(
-                        'John Doe',
+                        'Guest User',
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 18,
@@ -70,13 +67,35 @@ class CustomDrawer extends StatelessWidget {
                   title: Text('Home'),
                   onTap: () {
                     // Navigate to home
+                    Navigator.pushNamed(context, '/home');
+                  },
+                ),
+                // ListTile(
+                //   leading: Icon(Icons.settings),
+                //   title: Text('Settings'),
+                //   onTap: () {
+                //     // Navigate to settings
+                //   },
+                // ),
+                ListTile(
+                  leading: Icon(Icons.settings),
+                  title: Text("Terms & Conditions"),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/terms-conditions');
                   },
                 ),
                 ListTile(
-                  leading: Icon(Icons.settings),
-                  title: Text('Settings'),
+                  leading: Icon(Icons.privacy_tip),
+                  title: Text("Privacy Policy"),
                   onTap: () {
-                    // Navigate to settings
+                    Navigator.pushNamed(context, '/privacy-policy');
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.contact_mail),
+                  title: Text("About Us"),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/about-us');
                   },
                 ),
               ],

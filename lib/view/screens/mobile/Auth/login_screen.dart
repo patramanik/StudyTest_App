@@ -227,6 +227,36 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
         ),
+        const SizedBox(width: 10),
+        Text("|", style: TextStyle(color: AppColors.textSecondary)),
+        const SizedBox(width: 10),
+        TextButton(
+          onPressed: () => controller.loginAsGuest(),
+          child: Text(
+            'Guest',
+            style: TextStyle(
+              color: AppColors.secondary,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+        Obx(() {
+          if (controller.canCheckBiometrics.value) {
+            return Row(
+              children: [
+                const SizedBox(width: 10),
+                Text("|", style: TextStyle(color: AppColors.textSecondary)),
+                IconButton(
+                  icon: Icon(Icons.fingerprint, color: AppColors.primary),
+                  onPressed: () => controller.authenticate(),
+                  tooltip: "Login with Biometrics",
+                ),
+              ],
+            );
+          } else {
+            return const SizedBox.shrink();
+          }
+        }),
       ],
     );
   }
