@@ -1,11 +1,13 @@
 class QuizModel {
   String? subject;
+  String? classNumber;
   List<Questions>? questions;
 
-  QuizModel({this.subject, this.questions});
+  QuizModel({this.subject, this.classNumber, this.questions});
 
   QuizModel.fromJson(Map<String, dynamic> json) {
     subject = json['subject'];
+    classNumber = json['class'];
     if (json['questions'] != null) {
       questions = <Questions>[];
       json['questions'].forEach((v) {
@@ -17,6 +19,7 @@ class QuizModel {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['subject'] = subject;
+    data['class'] = classNumber;
     if (questions != null) {
       data['questions'] = questions!.map((v) => v.toJson()).toList();
     }

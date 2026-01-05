@@ -1,5 +1,6 @@
 {
   "subject": "History",
+  "class": "10",
   "questions": [
     {
       "id": 1,
@@ -913,6 +914,952 @@
         "D": "Dr. Sarvepalli Radhakrishnan"
       },
       "correctAnswer": "A"
+    },
+    {
+      "id": 84,
+      "question": "The editor of the newspaper 'Sambad Prabhakar' was—",
+      "options": {
+        "A": "Debendranath Tagore",
+        "B": "Bipin Chandra Pal",
+        "C": "Ishwar Chandra Gupta",
+        "D": "Dwarkanath Vidyabhusan"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 85,
+      "question": "The book 'Jibansmriti' was first published in—",
+      "options": {
+        "A": "Desh",
+        "B": "Somprokash",
+        "C": "Bangadarshan",
+        "D": "Probashi"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 86,
+      "question": "The word 'Historiography' refers to—",
+      "options": {
+        "A": "Elements of history",
+        "B": "Historical logic",
+        "C": "Historical inscriptions",
+        "D": "The study of history / writing of history"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 87,
+      "question": "Who wrote 'Ecological Imperialism'?",
+      "options": {
+        "A": "Stanley Jackson",
+        "B": "Elizabeth Whitcombe",
+        "C": "Ramachandra Guha",
+        "D": "Alfred Crosby"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 88,
+      "question": "The name of the first Bengali film is—",
+      "options": {
+        "A": "Pather Panchali",
+        "B": "Billwamangal",
+        "C": "Raja Harishchandra",
+        "D": "Alam Ara"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 89,
+      "question": "The editor of 'Sandhya' magazine was—",
+      "options": {
+        "A": "Krishnakumar Mitra",
+        "B": "Ishwar Chandra Gupta",
+        "C": "Brahmabandhab Upadhyay",
+        "D": "Bankim Chandra Chattopadhyay"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 90,
+      "question": "The most important element of modern history studies is—",
+      "options": {
+        "A": "Government documents",
+        "B": "Personal letters",
+        "C": "Newspapers",
+        "D": "Memoirs"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 91,
+      "question": "Subaltern Studies in India began in the—",
+      "options": {
+        "A": "1960s",
+        "B": "1970s",
+        "C": "1980s",
+        "D": "1890s"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 92,
+      "question": "The film 'Raja Harishchandra' was produced in—",
+      "options": {
+        "A": "1911 AD",
+        "B": "1912 AD",
+        "C": "1913 AD",
+        "D": "1928 AD"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 93,
+      "question": "The first railway in India (1853) was introduced between—",
+      "options": {
+        "A": "Bombay to Delhi",
+        "B": "Bombay to Thane",
+        "C": "Howrah to Hooghly",
+        "D": "Sealdah to Canning"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 94,
+      "question": "The first example of 'Gothic Architecture' established in Kolkata is—",
+      "options": {
+        "A": "Asiatic Society",
+        "B": "Hastings House",
+        "C": "High Court",
+        "D": "The Monument"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 95,
+      "question": "Who is known as the 'Father of History'?",
+      "options": {
+        "A": "Herodotus",
+        "B": "Thucydides",
+        "C": "Josephus",
+        "D": "Galileo"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 96,
+      "question": "The songs of camel drivers in Punjab are called—",
+      "options": {
+        "A": "Ghazal",
+        "B": "Thumri",
+        "C": "Bandiyal",
+        "D": "Tappa"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 97,
+      "question": "Who wrote 'Twenty-Two Yards to Freedom', a book regarding Indian cricket history?",
+      "options": {
+        "A": "Boria Majumdar",
+        "B": "Ashis Nandy",
+        "C": "Mihir Bose",
+        "D": "Ramachandra Guha"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 98,
+      "question": "Who is the author of the book 'Military History of India'?",
+      "options": {
+        "A": "Ramesh Chandra Majumdar",
+        "B": "Jadunath Sarkar",
+        "C": "Ratnabali Chatterjee",
+        "D": "Surendranath Sen"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 99,
+      "question": "The term 'Ecofeminism' was first used by—",
+      "options": {
+        "A": "J. Ferguson",
+        "B": "J. Krishnamurti",
+        "C": "C. Barnett",
+        "D": "Françoise d'Eaubonne"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 100,
+      "question": "The game of cricket first originated in—",
+      "options": {
+        "A": "England",
+        "B": "Greece",
+        "C": "France",
+        "D": "Portugal"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 101,
+      "question": "Who was the father of the spongy 'Rasogolla'?",
+      "options": {
+        "A": "Baridbaran Das",
+        "B": "Nabin Chandra Das",
+        "C": "Nabin Chandra Sen",
+        "D": "Bhola Moyra"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 102,
+      "question": "The capital of British India was shifted from Calcutta to Delhi in—",
+      "options": {
+        "A": "1910 AD",
+        "B": "1911 AD",
+        "C": "1912 AD",
+        "D": "1913 AD"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 103,
+      "question": "Mohun Bagan won their first IFA Shield by defeating which team?",
+      "options": {
+        "A": "West Yorkshire",
+        "B": "East Yorkshire",
+        "C": "South Yorkshire",
+        "D": "North Yorkshire"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 104,
+      "question": "Women's history studies first began in the 1960s in—",
+      "options": {
+        "A": "Russia",
+        "B": "USA",
+        "C": "Japan",
+        "D": "France"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 105,
+      "question": "Drama/Theater studies first originated in which country?",
+      "options": {
+        "A": "Rome",
+        "B": "Greece",
+        "C": "China",
+        "D": "India"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 106,
+      "question": "The autobiography or memoir of Subhash Chandra Bose is—",
+      "options": {
+        "A": "An Autobiography",
+        "B": "The Indian Struggle",
+        "C": "A Nation in Making",
+        "D": "Memories of My Life and Times"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 107,
+      "question": "The classical dance 'Bharatanatyam' originally belongs to—",
+      "options": {
+        "A": "Tamil Nadu",
+        "B": "Andhra Pradesh",
+        "C": "Kerala",
+        "D": "Manipur"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 108,
+      "question": "The name of the first Bengali 'talkie' film is—",
+      "options": {
+        "A": "Billwamangal",
+        "B": "Raja Harishchandra",
+        "C": "Alam Ara",
+        "D": "Jamai Sasthi"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 109,
+      "question": "The popular folk dance of Assam is known as—",
+      "options": {
+        "A": "Bihu",
+        "B": "Chhau",
+        "C": "Kathak",
+        "D": "Bharatanatyam"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 110,
+      "question": "Who wrote the book 'Women in Modern India'?",
+      "options": {
+        "A": "Boria Majumdar",
+        "B": "Sufia Kamal",
+        "C": "Neera Desai",
+        "D": "Medha Patkar"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 111,
+      "question": "Among these, who is a Marxist historian?",
+      "options": {
+        "A": "Amalesh Tripathi",
+        "B": "Rajni Palme Dutt",
+        "C": "Ramesh Chandra Majumdar",
+        "D": "Tarachand"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 112,
+      "question": "The song 'Vande Mataram' was first published in—",
+      "options": {
+        "A": "Somprokash magazine",
+        "B": "Hindu Patriot magazine",
+        "C": "Bangadarshan magazine",
+        "D": "Digdarshan magazine"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 113,
+      "question": "The first to research the history of sports in India was—",
+      "options": {
+        "A": "Soumen Mitra",
+        "B": "Ashis Nandy",
+        "C": "Mihir Roy",
+        "D": "Ramachandra Guha"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 114,
+      "question": "The author of the book 'Bangalir Itihas' (History of the Bengalis) is—",
+      "options": {
+        "A": "Rakhal Das Banerji",
+        "B": "Rabindranath Tagore",
+        "C": "Nihar Ranjan Ray",
+        "D": "Ramesh Chandra Majumdar"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 115,
+      "question": "Who was the main architect of Rashtrapati Bhavan?",
+      "options": {
+        "A": "Edwin Lutyens",
+        "B": "George Bernard Shaw",
+        "C": "Dirk Bolliff",
+        "D": "Thomas Metcalfe"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 116,
+      "question": "The first Principal of Calcutta Medical College was—",
+      "options": {
+        "A": "Dr. M. J. Bramley",
+        "B": "Dr. H. H. Goodeve",
+        "C": "Dr. N. Wallich",
+        "D": "Dr. J. Grant"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 117,
+      "question": "The first B.A. examination of Calcutta University was held in—",
+      "options": {
+        "A": "1857 AD",
+        "B": "1858 AD",
+        "C": "1859 AD",
+        "D": "1860 AD"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 118,
+      "question": "The ideal of 'Sarva Dharma Samanwaya' (Harmony of all religions) was preached by—",
+      "options": {
+        "A": "Vijaykrishna Goswami",
+        "B": "Swami Vivekananda",
+        "C": "Sri Ramakrishna",
+        "D": "Keshab Chandra Sen"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 119,
+      "question": "The publisher of the English translation of the play 'Neel Darpan' was—",
+      "options": {
+        "A": "Kaliprasanna Singha",
+        "B": "Michael Madhusudan Dutt",
+        "C": "Harish Chandra Mukherjee",
+        "D": "Rev. James Long"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 120,
+      "question": "The practice of Sati was abolished in—",
+      "options": {
+        "A": "1828 AD",
+        "B": "1829 AD",
+        "C": "1830 AD",
+        "D": "1856 AD"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 121,
+      "question": "The editor of 'Bamabodhini' magazine was—",
+      "options": {
+        "A": "Umesh Chandra Dutt",
+        "B": "Shishir Kumar Ghosh",
+        "C": "Krishnachandra Majumdar",
+        "D": "Dwarkanath Vidyabhusan"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 122,
+      "question": "Who established 'Nabobidhan'?",
+      "options": {
+        "A": "Dayananda Saraswati",
+        "B": "Keshab Chandra Sen",
+        "C": "Swami Vivekananda",
+        "D": "Maharshi Debendranath Tagore"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 123,
+      "question": "The General Committee of Public Instruction was formed in—",
+      "options": {
+        "A": "1713 AD",
+        "B": "1913 AD",
+        "C": "1813 AD",
+        "D": "1823 AD"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 124,
+      "question": "The first government education commission (Hunter Commission) was formed in—",
+      "options": {
+        "A": "1872 AD",
+        "B": "1878 AD",
+        "C": "1882 AD",
+        "D": "1890 AD"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 125,
+      "question": "The first Indian Vice-Chancellor of Calcutta University was—",
+      "options": {
+        "A": "Sir Ramesh Chandra Mitra",
+        "B": "Sir Ashutosh Mukherjee",
+        "C": "Sir Gurudas Banerjee",
+        "D": "Sir James William Colvile"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 126,
+      "question": "Which of the following was NOT included in the 'Three Acts' introduced by the British government in 1872?",
+      "options": {
+        "A": "Child marriage",
+        "B": "Polygamy",
+        "C": "Widow remarriage",
+        "D": "Sati"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 127,
+      "question": "Who was known by the title 'Brahmananda'?",
+      "options": {
+        "A": "Debendranath Tagore",
+        "B": "Radhakanta Deb",
+        "C": "Keshab Chandra Sen",
+        "D": "Shibnath Shastri"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 128,
+      "question": "'Hutom Pyancha' was the pseudonym of—",
+      "options": {
+        "A": "Peary Chand Mitra",
+        "B": "Kaliprasanna Singha",
+        "C": "Shibnath Shastri",
+        "D": "Keshab Chandra Sen"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 129,
+      "question": "The first editor of 'Hindu Patriot' magazine was—",
+      "options": {
+        "A": "Madhusudan Ray",
+        "B": "Umesh Chandra Dutt",
+        "C": "Harish Chandra Mukherjee",
+        "D": "Girish Chandra Ghosh"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 130,
+      "question": "Sati was abolished by which regulation?",
+      "options": {
+        "A": "Regulation XVII",
+        "B": "Regulation XVI",
+        "C": "Regulation XV",
+        "D": "Regulation XIV"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 131,
+      "question": "The play 'Neel Darpan' was printed in—",
+      "options": {
+        "A": "Nadia",
+        "B": "Dhaka",
+        "C": "Serampore",
+        "D": "Kolkata"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 132,
+      "question": "Who led the Brahmo Samaj after Raja Rammohan Roy?",
+      "options": {
+        "A": "Akshay Kumar Dutt",
+        "B": "Debendranath Tagore",
+        "C": "Ramchandra Vidyabagish",
+        "D": "Tarachand Chakraborty"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 133,
+      "question": "The first Muslim graduate of Calcutta University was—",
+      "options": {
+        "A": "Syed Ameer Ali",
+        "B": "Abdul Latif",
+        "C": "Delwar Hossain Ahmed",
+        "D": "Syed Ahmad"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 134,
+      "question": "Debendranath Tagore joined the Brahmo Samaj in—",
+      "options": {
+        "A": "1830 AD",
+        "B": "1833 AD",
+        "C": "1843 AD",
+        "D": "1850 AD"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 135,
+      "question": "The Bengal Renaissance was—",
+      "options": {
+        "A": "Individual-centric",
+        "B": "Institution-centric",
+        "C": "Kolkata-centric",
+        "D": "Village-centric"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 136,
+      "question": "Rammohan Roy established the Anglo-Hindu School in—",
+      "options": {
+        "A": "1821 AD",
+        "B": "1823 AD",
+        "C": "1815 AD",
+        "D": "1826 AD"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 137,
+      "question": "The first recipient of the Premchand Roychand Scholarship from Calcutta University was—",
+      "options": {
+        "A": "Bankim Chandra Chattopadhyay",
+        "B": "Vidyasagar",
+        "C": "Ananda Mohan Bose",
+        "D": "Ashutosh Mukherjee"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 138,
+      "question": "The word 'Renaissance' is originally a—",
+      "options": {
+        "A": "English word",
+        "B": "French word",
+        "C": "Italian word",
+        "D": "Latin word"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 139,
+      "question": "The booklet 'Stree Shiksha Vidhayak' written by Gourmohan Vidyalankar was published in—",
+      "options": {
+        "A": "1817 AD",
+        "B": "1822 AD",
+        "C": "1823 AD",
+        "D": "1835 AD"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 140,
+      "question": "The 'Council of Education' was formed in—",
+      "options": {
+        "A": "1813 AD",
+        "B": "1823 AD",
+        "C": "1835 AD",
+        "D": "1842 AD"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 141,
+      "question": "Who is the 'odd one out' in the context of spreading Western education in India?",
+      "options": {
+        "A": "Raja Rammohan Roy",
+        "B": "Kaliprasanna Singha",
+        "C": "David Hare",
+        "D": "Drinkwater Bethune"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 142,
+      "question": "The Asiatic Society (1784 AD) was created for—",
+      "options": {
+        "A": "Oriental studies",
+        "B": "Western studies",
+        "C": "Military studies",
+        "D": "Studies of Hindu and Islamic laws"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 143,
+      "question": "Who established the General Assembly's Institution?",
+      "options": {
+        "A": "Alexander Duff",
+        "B": "David Hare",
+        "C": "William Carey",
+        "D": "Drinkwater Bethune"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 144,
+      "question": "The first Chancellor of Calcutta University was—",
+      "options": {
+        "A": "William Colvile",
+        "B": "Sir Gurudas Banerjee",
+        "C": "Lord Canning",
+        "D": "Sir Ashutosh Mukherjee"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 145,
+      "question": "Who established the Calcutta Madrasa?",
+      "options": {
+        "A": "Warren Hastings",
+        "B": "Lord Hastings",
+        "C": "Lord Canning",
+        "D": "Lord Amherst"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 146,
+      "question": "Who wrote the play 'Neel Darpan'?",
+      "options": {
+        "A": "Dinabandhu Mitra",
+        "B": "Kaliprasanna Singha",
+        "C": "Subodh Ghosh",
+        "D": "James Long"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 147,
+      "question": "Who translated 'Neel Darpan' into English?",
+      "options": {
+        "A": "Michael Madhusudan Dutt",
+        "B": "Dinabandhu Mitra",
+        "C": "James Long",
+        "D": "James Mill"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 148,
+      "question": "The editor of the magazine 'Sambad Kaumudi' was—",
+      "options": {
+        "A": "Debendranath Tagore",
+        "B": "Ishwar Chandra Gupta",
+        "C": "Bhabani Charan Bandyopadhyay",
+        "D": "Rammohan Roy"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 149,
+      "question": "The creator of 'Neo-Vedanta' was—",
+      "options": {
+        "A": "Sri Ramakrishna",
+        "B": "Rammohan Roy",
+        "C": "Debendranath Tagore",
+        "D": "Swami Vivekananda"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 150,
+      "question": "The current name of Pataldanga Academy (established 1818) is—",
+      "options": {
+        "A": "Hare School",
+        "B": "Bethune School",
+        "C": "Hindu School",
+        "D": "Sanskrit School"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 151,
+      "question": "Who preached the 'Downward Filtration Theory'?",
+      "options": {
+        "A": "Colebrooke",
+        "B": "Thomas Babington Macaulay",
+        "C": "David Hare",
+        "D": "William Bentinck"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 152,
+      "question": "The followers of Derozio were known as—",
+      "options": {
+        "A": "Young Bengal",
+        "B": "Rammohan's followers",
+        "C": "Ramakrishna's followers",
+        "D": "Vivekananda's followers"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 153,
+      "question": "Who among the following was known as an 'Orientalist'?",
+      "options": {
+        "A": "David Hare",
+        "B": "Thomas Babington Macaulay",
+        "C": "William Jones",
+        "D": "Charles Metcalfe"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 154,
+      "question": "Dinabandhu Mitra's 'Neel Darpan' is a—",
+      "options": {
+        "A": "Satirical play",
+        "B": "Biographical play",
+        "C": "Religious play",
+        "D": "Nationalistic play"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 155,
+      "question": "Which institution was directly related to female education in the 19th century?",
+      "options": {
+        "A": "Bethune School",
+        "B": "Scottish Church School",
+        "C": "Hare School",
+        "D": "Hindu School"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 156,
+      "question": "The subject of female education was the central topic of which magazine in 19th-century Bengal?",
+      "options": {
+        "A": "Somprokash",
+        "B": "Bangadarshan",
+        "C": "Grambarta Prokashika",
+        "D": "Bamabodhini Patrika"
+      },
+      "correctAnswer": "D"
+    },
+    {
+      "id": 157,
+      "question": "By 'Yato Mat Tato Path', Sri Ramakrishna meant—",
+      "options": {
+        "A": "Ideal of Neo-Vedanta",
+        "B": "Ideal of Harmony of all religions",
+        "C": "Ideal of Idolatry",
+        "D": "Ideal of Renaissance"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 158,
+      "question": "The 'Bamabodhini' edited by Umesh Chandra Dutt was a periodical because it was a—",
+      "options": {
+        "A": "Bengali language publication",
+        "B": "Monthly magazine",
+        "C": "Political magazine",
+        "D": "Daily newspaper"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 159,
+      "question": "Which of the following is NOT associated with female education and rights?",
+      "options": {
+        "A": "Bamabodhini Patrika",
+        "B": "Grambarta Prokashika",
+        "C": "Female Juvenile Society",
+        "D": "Bethune School"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 160,
+      "question": "The proponent of 'Neo-Vaishnavism' was—",
+      "options": {
+        "A": "Lalon Fakir",
+        "B": "Vijaykrishna Goswami",
+        "C": "Raja Rammohan Roy",
+        "D": "Debendranath Tagore"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 161,
+      "question": "Who was the Governor-General of India at the time of the establishment of Calcutta Medical College?",
+      "options": {
+        "A": "Wellesley",
+        "B": "William Bentinck",
+        "C": "Dalhousie",
+        "D": "Canning"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 162,
+      "question": "The Widow Remarriage Act was passed in 1856 by which regulation?",
+      "options": {
+        "A": "Regulation XV",
+        "B": "Regulation XVI",
+        "C": "Regulation XVII",
+        "D": "Regulation XVIII"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 163,
+      "question": "Who established the 'Brahmo Samaj of India'?",
+      "options": {
+        "A": "Shibnath Shastri",
+        "B": "Keshab Chandra Sen",
+        "C": "Radhakanta Deb",
+        "D": "Rammohan Roy"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 164,
+      "question": "The 'Macaulay Minute' was published in—",
+      "options": {
+        "A": "1823 AD",
+        "B": "1830 AD",
+        "C": "1835 AD",
+        "D": "1839 AD"
+      },
+      "correctAnswer": "C"
+    },
+    {
+      "id": 165,
+      "question": "The 'Hindu Patriot' magazine was first published in—",
+      "options": {
+        "A": "1830 AD",
+        "B": "1853 AD",
+        "C": "1857 AD",
+        "D": "1860 AD"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 166,
+      "question": "Which institution was known as the 'Oxford of the East'?",
+      "options": {
+        "A": "Presidency College",
+        "B": "Hindu College",
+        "C": "Fort William College",
+        "D": "Sanskrit College"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 167,
+      "question": "The first Bengali play translated into a foreign language was—",
+      "options": {
+        "A": "Shah Jahan",
+        "B": "Neel Darpan",
+        "C": "Malati-Madhav",
+        "D": "Chakor Darpan"
+      },
+      "correctAnswer": "B"
+    },
+    {
+      "id": 168,
+      "question": "The editor of 'Hindu Patriot' magazine was—",
+      "options": {
+        "A": "Harish Chandra Mukherjee",
+        "B": "Debendranath Tagore",
+        "C": "Madhusudan Ray",
+        "D": "Mahatma Gandhi"
+      },
+      "correctAnswer": "A"
+    },
+    {
+      "id": 169,
+      "question": "The first Indian woman doctor was—",
+      "options": {
+        "A": "Chandramukhi Bose",
+        "B": "Swarnakumari Devi",
+        "0": "Kadambini Ganguly",
+        "D": "Abala Bose"
+      },
+      "correctAnswer": "C"
     }
   ]
 }

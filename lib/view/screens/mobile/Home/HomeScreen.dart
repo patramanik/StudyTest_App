@@ -105,7 +105,10 @@ class HomeScreen extends StatelessWidget {
           onTap: () => Get.toNamed('/question-bank-list'),
           child: serviceCard('Question Bank', Colors.purple, Icons.book),
         ),
-        serviceCard('Live Test', Colors.pink, Icons.today),
+        GestureDetector(
+          onTap: () => Get.toNamed('/live-test-list'),
+          child: serviceCard('Live Test', Colors.pink, Icons.today),
+        ),
         serviceCard('Study Plan', Colors.teal, Icons.school),
       ],
     );

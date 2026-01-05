@@ -25,6 +25,10 @@ class QuizScreen extends StatelessWidget {
           return Center(child: CircularProgressIndicator(color: AppColors.primary));
         }
 
+        if (controller.isReviewMode.value) {
+          return _buildReviewScreen(context);
+        }
+
         if (controller.isQuizFinished.value) {
           return _buildResultScreen();
         }
@@ -261,6 +265,20 @@ class QuizScreen extends StatelessWidget {
             ),
             const SizedBox(height: 40),
             ElevatedButton(
+              onPressed: () {
+                controller.isReviewMode.value = true;
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.orange,
+                padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: const Text("Review Answers", style: TextStyle(color: Colors.white, fontSize: 16)),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
               onPressed: () => Get.back(),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.primary,
@@ -278,6 +296,126 @@ class QuizScreen extends StatelessWidget {
              )
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildReviewScreen(BuildContext context) {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Text(
+            "Review Answers",
+             style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
+          ),
+        ),
+        Expanded(
+          child: ListView.builder(
+            padding: const EdgeInsets.all(16),
+            itemCount: controller.questions.length,
+            itemBuilder: (context, index) {
+              final question = controller.questions[index];
+              final userAnswer = controller.userAnswers[index];
+              final correctAnswer = question.correctAnswer;
+              final isCorrect = userAnswer == correctAnswer;
+
+              return Card(
+                elevation: 2,
+                margin: const EdgeInsets.only(bottom: 16),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Q${index + 1}: ${question.question}",
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      if (question.options != null) ...[
+                        _buildReviewOption(
+                          "A", question.options!.a, userAnswer, correctAnswer),
+                        _buildReviewOption(
+                          "B", question.options!.b, userAnswer, correctAnswer),
+                        _buildReviewOption(
+                          "C", question.options!.c, userAnswer, correctAnswer),
+                        _buildReviewOption(
+                          "D", question.options!.d, userAnswer, correctAnswer),
+                      ],
+                      const SizedBox(height: 8),
+                       Text(
+                        isCorrect ? "Correct" : "Incorrect",
+                        style: TextStyle(
+                          color: isCorrect ? Colors.green : Colors.red,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: ElevatedButton(
+            onPressed: () {
+               Get.back(); // Go back to home or previous screen
+            },
+            style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.primary,
+                 minimumSize: const Size(double.infinity, 50),
+            ),
+            child: const Text("Close Review", style: TextStyle(color: Colors.white)),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildReviewOption(
+      String key, String? text, String? userAnswer, String? correctAnswer) {
+    if (text == null) return const SizedBox.shrink();
+
+    Color color = Colors.transparent;
+    Color textColor = Colors.black;
+    FontWeight fontWeight = FontWeight.normal;
+
+    if (key == correctAnswer) {
+      color = Colors.green.withOpacity(0.2);
+      textColor = Colors.green[800]!;
+      fontWeight = FontWeight.bold;
+    } else if (key == userAnswer) {
+      // User selected this but it's wrong (since if it was correct it would be caught above)
+      color = Colors.red.withOpacity(0.2);
+       textColor = Colors.red[800]!;
+    }
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 4),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(4),
+      ),
+      child: Row(
+        children: [
+          Text(
+            "$key. ",
+            style: TextStyle(fontWeight: FontWeight.bold, color: textColor),
+          ),
+          Expanded(
+            child: Text(
+              text,
+              style: TextStyle(color: textColor, fontWeight: fontWeight),
+            ),
+          ),
+        ],
       ),
     );
   }

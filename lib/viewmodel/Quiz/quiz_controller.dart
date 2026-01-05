@@ -16,6 +16,7 @@ class QuizController extends GetxController {
   final RxBool isLoading = true.obs;
   final RxBool isQuizFinished = false.obs;
 
+  final RxBool isReviewMode = false.obs;
 
   @override
   void onInit() {
@@ -29,6 +30,8 @@ class QuizController extends GetxController {
       isLoading.value = false;
     } else if (args != null && args.containsKey('file')) {
       loadQuizData(args['file']);
+    } else if (args != null && args['mode'] == 'live') {
+      loadLiveQuizData(language: args['language']);
     } else {
       // Fallback
       loadQuizData('lib/data/data/history_bengoli.json');
@@ -50,6 +53,65 @@ class QuizController extends GetxController {
     } catch (e) {
       Get.snackbar("Error", "Failed to load quiz data");
       print("Error loading quiz data: $e");
+    } finally {
+      isLoading.value = false;
+    }
+  }
+
+  Future<void> loadLiveQuizData({String? language}) async {
+    try {
+      isLoading.value = true;
+      List<Questions> allQuestions = [];
+      List<String> files = [];
+
+      if (language == 'English') {
+        files = ['lib/data/data/history_english.json', 'lib/data/data/data_e.json'];
+      } else if (language == 'Bengali') {
+        files = ['lib/data/data/history_bengoli.json', 'lib/data/data/data.json'];
+      } else {
+        // Fallback: all
+        files = [
+          'lib/data/data/data.json',
+          'lib/data/data/history_english.json',
+          'lib/data/data/history_bengoli.json',
+          'lib/data/data/data_e.json'
+        ];
+      }
+
+      for (String file in files) {
+        try {
+          final String response = await rootBundle.loadString(file);
+          if (response.trim().isEmpty) continue; // Skip empty files
+
+          final data = json.decode(response);
+          
+          if (data is List) {
+             if (data.isNotEmpty) {
+                 for(var item in data) {
+                   allQuestions.add(Questions.fromJson(item));
+                 }
+             }
+          } else {
+             QuizModel quizData = QuizModel.fromJson(data);
+             if (quizData.questions != null) {
+               allQuestions.addAll(quizData.questions!);
+             }
+          }
+        } catch (e) {
+          print("Error loading $file: $e");
+        }
+      }
+
+      if (allQuestions.isNotEmpty) {
+        allQuestions.shuffle();
+        questions.assignAll(allQuestions.take(25).toList());
+      } else {
+         Get.snackbar("Error", "No questions available for live test");
+      }
+
+    } catch (e) {
+       Get.snackbar("Error", "Failed to load live quiz");
+       print("Error loading live quiz: $e");
     } finally {
       isLoading.value = false;
     }

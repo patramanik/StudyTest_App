@@ -9,6 +9,7 @@ import '../../view/screens/mobile/Quiz/quiz_screen.dart';
 import '../../view/screens/mobile/Quiz/mock_test_list_screen.dart';
 import '../../view/screens/mobile/Quiz/question_bank_list_screen.dart';
 import '../../view/screens/mobile/Quiz/question_bank_view_screen.dart';
+import '../../view/screens/mobile/Quiz/live_test_list_screen.dart';
 
 import '../view/screens/mobile/Auth/login_screen.dart';
 import '../view/screens/mobile/Auth/otp_verification_screen.dart';
@@ -33,6 +34,7 @@ class AppRoutes {
     GetPage(name: '/mock-test-list', page: () => MockTestListScreen()),
     GetPage(name: '/question-bank-list', page: () => QuestionBankListScreen()),
     GetPage(name: '/question-bank-view', page: () => const QuestionBankViewScreen()),
+    GetPage(name: '/live-test-list', page: () => const LiveTestListScreen()),
     
     // Static Pages
     GetPage(name: '/privacy-policy', page: () => const PrivacyPolicyScreen()),
