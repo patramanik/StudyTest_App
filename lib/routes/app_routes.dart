@@ -5,6 +5,7 @@ import 'package:study_test_app/view/screens/mobile/Home/HomeScreen.dart';
 import 'package:study_test_app/view/screens/mobile/Info/PrivacyPolicyScreen.dart';
 import 'package:study_test_app/view/screens/mobile/Info/TermsAndConditionsScreen.dart';
 import 'package:study_test_app/view/screens/mobile/Info/AboutUsScreen.dart';
+import '../../view/screens/mobile/Profile/profile_screen.dart';
 import '../../view/screens/mobile/Quiz/quiz_screen.dart';
 import '../../view/screens/mobile/Quiz/mock_test_list_screen.dart';
 import '../../view/screens/mobile/Quiz/question_bank_list_screen.dart';
@@ -40,5 +41,8 @@ class AppRoutes {
     GetPage(name: '/privacy-policy', page: () => const PrivacyPolicyScreen()),
     GetPage(name: '/terms-conditions', page: () => const TermsAndConditionsScreen()),
     GetPage(name: '/about-us', page: () => const AboutUsScreen()),
+
+    // User Profile
+    GetPage(name: '/profile', page: () => const ProfileScreen()),
   ];
 }

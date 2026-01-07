@@ -5,7 +5,7 @@ import '../../../../config/theme/app_colors.dart';
 import '../../../../viewmodel/Auth/auth_controller.dart';
 
 class LoginScreen extends StatelessWidget {
-  final AuthController controller = Get.put(AuthController());
+  final AuthController controller = Get.find<AuthController>();
   final _formKey = GlobalKey<FormState>();
 
   LoginScreen({super.key});

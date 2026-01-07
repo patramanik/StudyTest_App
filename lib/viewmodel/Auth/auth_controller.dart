@@ -3,15 +3,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import 'package:local_auth/local_auth.dart';
+import 'package:appwrite/appwrite.dart'; // Import Appwrite exceptions
+import '../../data/services/appwrite_service.dart';
+import 'package:appwrite/models.dart' as models;
 
 class AuthController extends GetxController {
   final RxBool obscurePassword = true.obs;
   final RxBool isLoading = false.obs;
   final RxBool canCheckBiometrics = false.obs;
+  final Rx<models.User?> currentUser = Rx<models.User?>(null);
 
   final LocalAuthentication auth = LocalAuthentication();
+  final AppwriteService _appwriteService = Get.find<AppwriteService>();
 
   final nameController = TextEditingController();
   final emailController = TextEditingController();
@@ -23,7 +27,16 @@ class AuthController extends GetxController {
   void onInit() {
     super.onInit();
     checkBiometrics();
-    checkLoginStatus();
+    loadUser();
+  }
+
+  Future<void> loadUser() async {
+    try {
+      final user = await _appwriteService.getCurrentUser();
+      currentUser.value = user;
+    } catch (e) {
+      print("Error loading user: $e");
+    }
   }
 
   Future<void> checkBiometrics() async {
@@ -42,21 +55,20 @@ class AuthController extends GetxController {
         localizedReason: 'Scan your fingerprint (or face) to authenticate',
         options: const AuthenticationOptions(
           stickyAuth: true,
-          biometricOnly: false, // Allows PIN/Pattern backup if biometrics fail
+          biometricOnly: false,
         ),
       );
 
       if (authenticated) {
-        // Log in the user if biometrics pass
-        // In a real app, you might want to re-verify or link this to a specific user
-        // For now, we reuse the stored user or guest
-        final prefs = await SharedPreferences.getInstance();
-        if (prefs.containsKey('current_user_name')) {
-             await prefs.setBool('isLoggedIn', true);
+        // If biometrics pass, ensure we have a valid Appwrite session or user
+        final user = await _appwriteService.getCurrentUser();
+        if (user != null) {
+             currentUser.value = user;
              Get.snackbar("Success", "Authenticated via Biometrics");
              Get.offAllNamed('/home');
         } else {
-             Get.snackbar("Notice", "Please login manually first to enable biometrics for future.");
+             Get.snackbar("Notice", "Session expired. Please login manually.");
+             Get.offAllNamed('/login');
         }
       }
     } catch (e) {
@@ -70,10 +82,18 @@ class AuthController extends GetxController {
   }
 
   Future<void> checkLoginStatus() async {
-    final prefs = await SharedPreferences.getInstance();
-    final bool? isLoggedIn = prefs.getBool('isLoggedIn');
-    if (isLoggedIn == true) {
-      Get.offAllNamed('/home');
+    try {
+      final user = await _appwriteService.getCurrentUser();
+      if (user != null) {
+        currentUser.value = user;
+        print("User is logged in: ${user.name}");
+        Get.offAllNamed('/home');
+      } else {
+        Get.offAllNamed('/login');
+      }
+    } catch (e) {
+      print("Check login status error: $e");
+      Get.offAllNamed('/login');
     }
   }
 
@@ -88,21 +108,13 @@ class AuthController extends GetxController {
 
     try {
       isLoading.value = true;
-      final prefs = await SharedPreferences.getInstance();
+      await _appwriteService.login(email: email, password: password);
+      await loadUser(); // Refresh user data
       
-      String? storedEmail = prefs.getString('user_email');
-      String? storedPassword = prefs.getString('user_password');
-      String? storedName = prefs.getString('user_name');
-
-      if (storedEmail == email && storedPassword == password) {
-        await prefs.setBool('isLoggedIn', true);
-        await prefs.setString('current_user_name', storedName ?? "User");
-        
-        Get.snackbar("Success", "Login successful");
-        Get.offAllNamed('/home');
-      } else {
-        Get.snackbar("Error", "Invalid credentials (Try registering first)");
-      }
+      Get.snackbar("Success", "Login successful");
+      Get.offAllNamed('/home');
+    } on AppwriteException catch (e) {
+      Get.snackbar("Error", e.message ?? "Login failed");
     } catch (e) {
       Get.snackbar("Error", "Login failed: $e");
     } finally {
@@ -112,11 +124,12 @@ class AuthController extends GetxController {
 
   Future<void> loginAsGuest() async {
     try {
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setBool('isLoggedIn', true);
-      await prefs.setString('current_user_name', "Guest");
+      // Guest login logic usually involves creating an anonymous session
+      // For now, we'll keep the mock behavior or implement anonymous session if requested
+      // _appwriteService.account.createAnonymousSession(); 
       
-      Get.offAllNamed('/home');
+      Get.snackbar("Info", "Guest login not fully implemented yet");
+      // Get.offAllNamed('/home');
     } catch (e) {
       Get.snackbar("Error", "Failed to login as Guest");
     }
@@ -134,19 +147,17 @@ class AuthController extends GetxController {
 
     try {
       isLoading.value = true;
-      final prefs = await SharedPreferences.getInstance();
+      // 1. Create Account
+      await _appwriteService.signUp(email: email, password: password, name: name);
       
-      // Store user credentials
-      await prefs.setString('user_name', name);
-      await prefs.setString('user_email', email);
-      await prefs.setString('user_password', password);
-      
-      // Auto login
-      await prefs.setBool('isLoggedIn', true);
-      await prefs.setString('current_user_name', name);
+      // 2. Auto Login after signup
+      await _appwriteService.login(email: email, password: password);
+      await loadUser();
 
       Get.snackbar("Success", "Account created successfully");
       Get.offAllNamed('/home');
+    } on AppwriteException catch (e) {
+      Get.snackbar("Error", e.message ?? "Registration failed");
     } catch (e) {
       Get.snackbar("Error", "Registration failed: $e");
     } finally {
@@ -155,20 +166,60 @@ class AuthController extends GetxController {
   }
 
   Future<void> logout() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('isLoggedIn', false);
-    // await prefs.remove('current_user_name'); // Keep name for welcome back?
-    Get.offAllNamed('/login'); // Assuming '/' is splash or login, but explicit login route is safer
+    try {
+      await _appwriteService.logout();
+      currentUser.value = null;
+      Get.offAllNamed('/login'); // Assuming '/' is splash or login
+    } catch (e) {
+      Get.snackbar("Error", "Logout failed: $e");
+    }
+  }
+
+  Future<void> updateUserProfile({String? name, String? phone, String? password}) async {
+    try {
+      isLoading.value = true;
+      final user = currentUser.value;
+      
+      bool isNameChanged = name != null && name.isNotEmpty && name != user?.name;
+      bool isPhoneChanged = phone != null && phone.isNotEmpty && phone != user?.phone;
+
+      if (isNameChanged) {
+        await _appwriteService.updateName(name: name!);
+      }
+
+      if (isPhoneChanged) {
+        if (!phone!.startsWith('+')) {
+             throw "Phone number must start with '+' (e.g., +91...)";
+        }
+        // Appwrite updatePhone requires password confirmation
+        if (password == null || password.isEmpty) {
+             throw "Password required to update phone number";
+        }
+        await _appwriteService.updatePhone(phone: phone, password: password);
+      }
+      
+      if (isNameChanged || isPhoneChanged) {
+        await loadUser(); // Refresh data
+        Get.snackbar("Success", "Profile updated successfully");
+      } else {
+        Get.snackbar("Info", "No changes to update");
+      }
+    } catch (e) {
+      Get.snackbar("Error", "Failed to update profile: $e");
+    } finally {
+      isLoading.value = false;
+    }
   }
 
   void sendPasswordReset() {
+    // Appwrite password recovery (future implementation)
     final email = emailController.text.trim();
     Get.snackbar(
-      "Reset Link Sent",
-      "Check your email: $email",
+      "Info",
+      "Password reset functionality requires Appwrite configuration.",
       snackPosition: SnackPosition.BOTTOM,
     );
-    Get.toNamed('/otp');
+     // _appwriteService.account.createRecovery(email: email, url: 'https://example.com/reset-password');
   }
 
   void sendOtp() {

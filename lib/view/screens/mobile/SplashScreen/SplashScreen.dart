@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:study_test_app/view/screens/mobile/Home/HomeScreen.dart';
+import 'package:get/get.dart';
+import '../../../../viewmodel/Auth/auth_controller.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -15,13 +17,9 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 5), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => HomeScreen(),
-        ),
-      );
+    final AuthController authController = Get.find<AuthController>();
+    Timer(const Duration(seconds: 3), () {
+      authController.checkLoginStatus();
     });
   }
 
