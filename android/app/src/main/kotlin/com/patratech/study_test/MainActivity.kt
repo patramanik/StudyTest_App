@@ -1,4 +1,4 @@
-package com.example.study_test_app
+package com.patratech.study_test
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 
